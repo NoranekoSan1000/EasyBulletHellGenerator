@@ -51,7 +51,7 @@ private BulletsManager explosionA() //爆発弾Sample
 StraightShot(int executioncount, float interval, Vector3 direction);  
 executioncount...実行回数  
 interval...射撃間隔  
-direction...初期角度（不要説）  
+direction...初期角度(不要説)  
 
 ![sc2](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
 
@@ -60,7 +60,7 @@ SpreadShot(int executioncount, float interval, float spreadangle, Vector3 direct
 executioncount...実行回数  
 interval...射撃間隔  
 spreadangle...拡散角度  
-direction...初期角度（不要説） 
+direction...初期角度(不要説)  
 numbullets...1回の射撃で放たれる弾数 
 
 ![sc3](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc3.png)
@@ -69,7 +69,7 @@ numbullets...1回の射撃で放たれる弾数
 ExplosionShot(int executioncount, float interval, Vector3 direction, int numbullets);  
 executioncount...実行回数  
 interval...射撃間隔  
-direction...初期角度（不要説） 
+direction...初期角度(不要説)  
 numbullets...1回の射撃で放たれる弾数  
 
 ![sc4](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc4.png)
