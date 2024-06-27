@@ -81,6 +81,7 @@ interval...射撃間隔
 radius...包囲される半径  
 direction...初期角度(不要説)  
 numbullets...1回の射撃で放たれる弾数  
+
 ![sc5](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc5.png)
 
   
