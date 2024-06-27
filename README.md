@@ -35,7 +35,7 @@ private BulletsManager explosionA() //爆発弾Sample
 　　　　GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);  
 　　　　BulletsManager s = bullets.AddComponent<BulletsManager>();  
 　　　　s.Initialize(bulletObject, targetObject); //オブジェクト設定  
-　　　  s.InitialBulletStatus(false, -15f, 15f, 5f); //弾の挙動設定  
+　　　　s.InitialBulletStatus(false, -15f, 15f, 5f); //弾の挙動設定  
 　　　　s.ExplosionShot(18, 0.15f, Vector3.back, 30); //弾幕設定  
 　　　　return s;  
 }  
