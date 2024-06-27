@@ -2,7 +2,8 @@
 Unityゲーム制作向けの弾幕生成アセット
 
 必要オブジェクト
-BulletObjectPool(EmptyObjectでよい) <= 
+
+BulletObjectPool(EmptyObjectでよい) <= BulletObjectPool.csをアタッチ
 
 ### StraightShot() 直線弾
 
