@@ -1,9 +1,10 @@
 # EasyBulletHellGenerater
-Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェネレーター】　
+Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェネレーター】  
+
 ![sc1](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc1.png)
 
   
-## 必要オブジェクト(名前は自由に設定)
+## 使い方
 
 ・BulletsLauncherObject(弾を発射するオブジェクト)  
 ∟ BulletsLauncher.csをアタッチ
@@ -16,6 +17,7 @@ Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェ
 ・BulletObjectPool(EmptyObjectでよい)  
 ∟ BulletObjectPool.csをアタッチ
 
+  
 ## 弾幕の種類
 
 ### StraightShot() 直線弾
@@ -25,3 +27,12 @@ Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェ
 ### ExplosionShot() 爆発弾
 
 ### SiegeShot() 包囲弾　
+
+  
+## 拡張機能
+
+### SetAngleOffsetX(float angle)
+
+### SetAngleOffsetY(float angle)
+
+### SetAngleOffsetZ(float angle)
