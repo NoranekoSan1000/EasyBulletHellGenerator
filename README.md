@@ -40,7 +40,7 @@ private BulletsManager explosionA() //爆発弾Sample
 　　return s;  
 }  
 
-
+これでJキーを入力すれば爆発弾が発射できます。  
   
 ## 弾幕の種類  
 
