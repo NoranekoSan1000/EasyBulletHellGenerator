@@ -2,11 +2,6 @@ using UnityEngine;
 
 public class BulletsLauncher : MonoBehaviour
 {
-    /*
-     ƒAƒŠƒXƒtƒ@ƒCƒA‚Ì‹““®‚ğs‚¦‚é‚æ‚¤‚É‚·‚éB
-    i¶¬ŒãA“Á’è‚Ì•ûŒü‚Ö—Í‚ª‰Á‚í‚é‚æ‚¤‚É‚·‚éBË’¼ü’e+‰E•ûŒü‚Ì—Í=‰ñ“]Hj
-     */
-
     [SerializeField] private GameObject bulletsManagerObject;
     [SerializeField] private GameObject bulletObject;
     [SerializeField] private GameObject targetObject;  
@@ -98,58 +93,58 @@ public class BulletsLauncher : MonoBehaviour
         }
     }
 
-    private BulletsManager straightA() //’¼ü’eSample
+    private BulletsManager straightA() //ç›´ç·šå¼¾Sample
     {
         GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);
         BulletsManager s = bullets.AddComponent<BulletsManager>();
-        s.Initialize(bulletObject, targetObject); //ƒIƒuƒWƒFƒNƒgİ’è
-        s.InitialBulletStatus(true, 5f, 10f, 4f); //’e‚Ì‹““®İ’è
-        s.StraightShot(5, 0.2f, Vector3.back); //’e–‹İ’è
+        s.Initialize(bulletObject, targetObject); //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¨­å®š
+        s.InitialBulletStatus(true, 5f, 10f, 4f); //å¼¾ã®æŒ™å‹•è¨­å®š
+        s.StraightShot(5, 0.2f, Vector3.back); //å¼¾å¹•è¨­å®š
         return s;
     }
-    private BulletsManager explosionA() //”š”­’eSample
+    private BulletsManager explosionA() //çˆ†ç™ºå¼¾Sample
     {
         GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);
         BulletsManager s = bullets.AddComponent<BulletsManager>();
-        s.Initialize(bulletObject, targetObject); //ƒIƒuƒWƒFƒNƒgİ’è
-        s.InitialBulletStatus(false, -15f, 15f, 5f); //’e‚Ì‹““®İ’è
-        s.ExplosionShot(18, 0.15f, Vector3.back, 30); //’e–‹İ’è
+        s.Initialize(bulletObject, targetObject); //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¨­å®š
+        s.InitialBulletStatus(false, -15f, 15f, 5f); //å¼¾ã®æŒ™å‹•è¨­å®š
+        s.ExplosionShot(18, 0.15f, Vector3.back, 30); //å¼¾å¹•è¨­å®š
         return s;
     }
-    private BulletsManager explosionB() //”š”­’eSample
+    private BulletsManager explosionB() //çˆ†ç™ºå¼¾Sample
     {
         GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);
         BulletsManager s = bullets.AddComponent<BulletsManager>();
-        s.Initialize(bulletObject, targetObject); //ƒIƒuƒWƒFƒNƒgİ’è
-        s.InitialBulletStatus(false, -15f, 20f, 6f); //’e‚Ì‹““®İ’è
-        s.ExplosionShot(20, 0.15f, Vector3.back, 2); //’e–‹İ’è
+        s.Initialize(bulletObject, targetObject); //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¨­å®š
+        s.InitialBulletStatus(false, -15f, 20f, 6f); //å¼¾ã®æŒ™å‹•è¨­å®š
+        s.ExplosionShot(20, 0.15f, Vector3.back, 2); //å¼¾å¹•è¨­å®š
         return s;
     }
-    private BulletsManager spreadA() //ŠgU’eSample
+    private BulletsManager spreadA() //æ‹¡æ•£å¼¾Sample
     {
         GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);
         BulletsManager s = bullets.AddComponent<BulletsManager>();
-        s.Initialize(bulletObject, targetObject); //ƒIƒuƒWƒFƒNƒgİ’è
-        s.InitialBulletStatus(false, -25f, 30f, 4f); //’e‚Ì‹““®İ’è
-        s.SpreadShot(50, 0.065f, 45f, Vector3.back, 4); //’e–‹İ’è
+        s.Initialize(bulletObject, targetObject); //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¨­å®š
+        s.InitialBulletStatus(false, -25f, 30f, 4f); //å¼¾ã®æŒ™å‹•è¨­å®š
+        s.SpreadShot(50, 0.065f, 45f, Vector3.back, 4); //å¼¾å¹•è¨­å®š
         return s;
     }
-    private BulletsManager spreadB() //ŠgU’eSample
+    private BulletsManager spreadB() //æ‹¡æ•£å¼¾Sample
     {
         GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);
         BulletsManager s = bullets.AddComponent<BulletsManager>();
-        s.Initialize(bulletObject, targetObject); //ƒIƒuƒWƒFƒNƒgİ’è
-        s.InitialBulletStatus(false, 20f, 50f, 4f); //’e‚Ì‹““®İ’è
-        s.SpreadShot(10, 0.1f, 40f, Vector3.back, 5); //’e–‹İ’è
+        s.Initialize(bulletObject, targetObject); //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¨­å®š
+        s.InitialBulletStatus(false, 20f, 50f, 4f); //å¼¾ã®æŒ™å‹•è¨­å®š
+        s.SpreadShot(10, 0.1f, 40f, Vector3.back, 5); //å¼¾å¹•è¨­å®š
         return s;
     }
-    private BulletsManager siegeA() //•ïˆÍ’eSample
+    private BulletsManager siegeA() //åŒ…å›²å¼¾Sample
     {
         GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);
         BulletsManager s = bullets.AddComponent<BulletsManager>();
-        s.Initialize(bulletObject, targetObject); //ƒIƒuƒWƒFƒNƒgİ’è
-        s.InitialBulletStatus(false, 7f, 0, 5f); //’e‚Ì‹““®İ’è
-        s.SiegeShot(7, 0.5f, 20f, Vector3.back, 12); //’e–‹İ’è 
+        s.Initialize(bulletObject, targetObject); //ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆè¨­å®š
+        s.InitialBulletStatus(false, 7f, 0, 5f); //å¼¾ã®æŒ™å‹•è¨­å®š
+        s.SiegeShot(7, 0.5f, 20f, Vector3.back, 12); //å¼¾å¹•è¨­å®š 
         return s;
     }
 }
