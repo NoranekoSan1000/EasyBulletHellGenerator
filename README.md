@@ -85,7 +85,7 @@ numbullets...1回の射撃で放たれる弾数
 ![sc5](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc5.png)
 
   
-## 拡張設定
+## 追加できる設定
 
 ### SetAngleOffsetX(float angle)  
 初期角度Xを変更します
@@ -96,12 +96,17 @@ numbullets...1回の射撃で放たれる弾数
 ### SetAngleOffsetZ(float angle)  
 初期角度Zを変更します
 
-### SetPositionOffset(Vector3 addpos)
+### SetPositionOffset(Vector3 addpos)  
+初期位置を変更します
 
-### SetRotate(float angle)
+### SetRotate(float angle)  
+1発ごとに発射角度をずらします
 
-### SetStartPauseTime(float startpausetime)
+### SetStartPauseTime(float startpausetime)  
+指定秒数後一時停止します
 
-### SetEndPauseTime(float endpausetime)
+### SetEndPauseTime(float endpausetime)  
+指定秒数後一時停止を終了します
 
-### SetEndPauseAllFire()
+### SetEndPauseAllFire()  
+全弾発射後一時停止を終了します
