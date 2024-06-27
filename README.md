@@ -87,11 +87,14 @@ numbullets...1回の射撃で放たれる弾数
   
 ## 拡張設定
 
-### SetAngleOffsetX(float angle)
+### SetAngleOffsetX(float angle)  
+初期角度Xを変更します
 
-### SetAngleOffsetY(float angle)
+### SetAngleOffsetY(float angle)  
+初期角度Yを変更します
 
-### SetAngleOffsetZ(float angle)
+### SetAngleOffsetZ(float angle)  
+初期角度Zを変更します
 
 ### SetPositionOffset(Vector3 addpos)
 
