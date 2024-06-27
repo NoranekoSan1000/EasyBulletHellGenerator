@@ -56,15 +56,22 @@ direction...初期角度（不要説）
 ![sc2](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
 
 ### SpreadShot() 拡散弾  
-ExplosionShot(int executioncount, float interval, Vector3 direction, int numbullets);
+SpreadShot(int executioncount, float interval, float spreadangle, Vector3 direction, int numbullets);  
+executioncount...実行回数  
+interval...射撃間隔  
+spreadangle...拡散角度  
+direction...初期角度（不要説） 
+numbullets...1回の射撃で放たれる弾数 
+
+![sc3](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc3.png)
+
+### ExplosionShot() 爆発弾  
+ExplosionShot(int executioncount, float interval, Vector3 direction, int numbullets);  
 executioncount...実行回数  
 interval...射撃間隔  
 direction...初期角度（不要説） 
 numbullets...1回の射撃で放たれる弾数  
 
-![sc3](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc3.png)
-
-### ExplosionShot() 爆発弾  
 ![sc4](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc4.png)
 
 ### SiegeShot() 包囲弾  
