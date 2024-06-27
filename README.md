@@ -1,6 +1,9 @@
 # EasyBulletHellGenerater
 Unityゲーム制作向けの弾幕生成アセット
 
+必要オブジェクト
+BulletObjectPool(EmptyObjectでよい) <= 
+
 ### StraightShot() 直線弾
 
 ### SpreadShot() 拡散弾
