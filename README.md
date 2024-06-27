@@ -1,10 +1,10 @@
 # EasyBulletHellGenerater
 Unityゲーム制作向けの弾幕生成アセット
 
-### 直線弾
+### StraightShot() 直線弾
 
-### 拡散弾
+### SpreadShot() 拡散弾
 
-### 爆発弾
+### ExplosionShot() 爆発弾
 
-### 包囲弾
+### SiegeShot() 包囲弾　
