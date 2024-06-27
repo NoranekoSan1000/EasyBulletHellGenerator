@@ -47,7 +47,8 @@ private BulletsManager explosionA() //爆発弾Sample
 ## 弾幕の種類  
 
 
-### StraightShot() 直線弾
+### StraightShot() 直線弾  
+![sc1](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
 
 ### SpreadShot() 拡散弾
 
