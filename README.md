@@ -1,6 +1,7 @@
 # EasyBulletHellGenerater
 3D Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェネレーター】  
-誰でも1分未満で
+誰でも1分未満で簡単に、あらゆる形、あらゆる動きの弾の雨を降らせるようになります。
+
 ![sc1](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc1.png)
 
   
