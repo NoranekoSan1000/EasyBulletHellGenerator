@@ -26,7 +26,9 @@ private void Update()
 　　if (Input.GetKey(KeyCode.J)) //Jキー入力時  
 　　{  
 　　　　BulletsManager s1 = explosionA();  
-　　　　s1.SetRotate(10);  
+　　　　s1.SetPositionOffset(new Vector3(0, 15, 0));
+　　　　s1.SetAngleOffsetX(90);
+　　　　s1.SetRotate(15);  
 　　}  
 }  
 
