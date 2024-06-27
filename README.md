@@ -42,3 +42,7 @@ Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェ
 ### SetRotate(float angle)
 
 ### SetStartPauseTime(float startpausetime)
+
+### SetEndPauseTime(float endpausetime)
+
+### SetEndPauseAllFire()
