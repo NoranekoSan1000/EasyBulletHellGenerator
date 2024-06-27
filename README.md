@@ -48,11 +48,10 @@ private BulletsManager explosionA() //爆発弾Sample
 
 
 ### 直線弾  
-StraightShot(int executioncount, float interval, Vector3 direction);
-executioncount...実行回数
-interval...射撃間隔
-direction...初期角度（不要説）
-
+StraightShot(int executioncount, float interval, Vector3 direction);  
+executioncount...実行回数  
+interval...射撃間隔  
+direction...初期角度（不要説）  
 
 ![sc2](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
 
