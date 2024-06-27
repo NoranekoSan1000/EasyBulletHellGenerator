@@ -6,16 +6,19 @@
 
   
 ## 使い方
+以下４つのオブジェクトを作成し以下のようにアタッチ作業を行ってください。
 
-・弾を発射するオブジェクトにBulletsLauncher.csをアタッチする
-∟ BulletsLauncher.csをアタッチ
+①[弾を発射するオブジェクト]にBulletsLauncher.csをアタッチする。
+∟ BulletsManagerObject　に②をアタッチ  
+∟ Bullet Object　に③をアタッチ
+∟ Target Object　に[任意の狙う対象オブジェクト]をアタッチ
 
-・BulletsManagerObject(弾幕管理用オブジェクト)
+②[弾幕管理用オブジェクト] EmptyObject
 
-・BulletObject(発射したい弾のオブジェクト)  
+③[発射したい弾のオブジェクト]にBulletEntity.csをアタッチする。
 ∟ BulletEntity.csをアタッチ
 
-・BulletObjectPool(EmptyObjectでよい)  
+④BulletObjectPool(EmptyObjectでよい)  
 ∟ BulletObjectPool.csをアタッチ
 
   
