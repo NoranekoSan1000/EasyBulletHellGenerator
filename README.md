@@ -102,6 +102,12 @@ numbullets...1回の射撃で放たれる弾数
 ### SetRotate(float angle)  
 1発ごとに発射角度をずらします
 
+### SetChangeTarget(GameObject newtarget, float changetime)  
+指定秒数後ターゲットへ向き変更
+
+### SetChangeGravity(float changetime)  
+指定秒数後重力ON
+
 ### SetStartPauseTime(float startpausetime)  
 指定秒数後一時停止します
 
