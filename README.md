@@ -36,3 +36,9 @@ Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェ
 ### SetAngleOffsetY(float angle)
 
 ### SetAngleOffsetZ(float angle)
+
+### SetPositionOffset(Vector3 addpos)
+
+### SetRotate(float angle)
+
+### SetStartPauseTime(float startpausetime)
