@@ -48,13 +48,16 @@ private BulletsManager explosionA() //爆発弾Sample
 
 
 ### StraightShot() 直線弾  
-![sc1](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
+![sc2](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
 
-### SpreadShot() 拡散弾
+### SpreadShot() 拡散弾  
+![sc3](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc3.png)
 
-### ExplosionShot() 爆発弾
+### ExplosionShot() 爆発弾  
+![sc4](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc4.png)
 
-### SiegeShot() 包囲弾　
+### SiegeShot() 包囲弾  
+![sc5](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc5.png)
 
   
 ## 拡張設定
