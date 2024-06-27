@@ -1,6 +1,6 @@
 # EasyBulletHellGenerater
 Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェネレーター】　
-![](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/img/sc1)
+![sc1](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc1.png)
 
   
 ## 必要オブジェクト(名前は自由に設定)
