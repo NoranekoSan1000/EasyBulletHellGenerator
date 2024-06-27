@@ -20,10 +20,10 @@
 ④[オブジェクトプール用オブジェクト]にBulletObjectPool.csをアタッチ  
 ∟ Bullet Object　に③をアタッチ  
 
-以下はBulletsLauncherの記述例です。  
+以下はBulletsLauncherの記述例です。    
 private void Update()  
 {  
-　　if (Input.GetKey(KeyCode.J))  
+　　if (Input.GetKey(KeyCode.J)) //Jキー入力時  
 　　{  
 　　　　BulletsManager s1 = explosionA();  
 　　　　s1.SetRotate(10);  
