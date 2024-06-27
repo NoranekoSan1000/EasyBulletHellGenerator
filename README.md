@@ -7,7 +7,7 @@
   
 ## 使い方
 
-・BulletsLauncherObject(弾を発射するオブジェクト)  
+・弾を発射するオブジェクトにBulletsLauncher.csをアタッチする
 ∟ BulletsLauncher.csをアタッチ
 
 ・BulletsManagerObject(弾幕管理用オブジェクト)
