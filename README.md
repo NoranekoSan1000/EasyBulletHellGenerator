@@ -1,17 +1,13 @@
-# EasyBulletHellGenerator ver1.1
+# EasyBulletHellGenerator ver1.2
 3D Unityゲーム制作向けの弾幕生成アセット【かんたん弾幕ジェネレーター】  
 誰でも1分未満で簡単に、あらゆる形、あらゆる動きの弾の雨を降らせるようになります。
 
 ![sc1](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc1.png)
 
   
-## 使い方
-Hierarchyに以下４つのオブジェクトを作成し、アタッチ作業を行ってください。
+## How to use
+Hierarchyに[発射用のオブジェクト]をCreateしてください。
 
-①[弾を発射するオブジェクト]にBulletsLauncher.csをアタッチ  
-∟ BulletsManagerObject　に②をアタッチ  
-∟ Bullet Object　に③をアタッチ  
-∟ Target Object　に[任意の狙う対象オブジェクト]をアタッチ  
   
 ②[弾幕管理用オブジェクト] EmptyObject  
 
