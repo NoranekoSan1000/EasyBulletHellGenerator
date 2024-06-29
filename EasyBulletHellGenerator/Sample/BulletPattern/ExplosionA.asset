@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad9641556553d14c8892c41918bf2ef, type: 3}
+  m_Name: ExplosionA
+  m_EditorClassIdentifier: 
+  formation: 200
+  bulletObject: {fileID: 2116964782039396192, guid: ed8452d1a6a894149ad9027307f2c5cb, type: 3}
+  isMissile: 0
+  speed: -12
+  acceleration: 16
+  existTime: 5
+  executionCount: 5
+  interval: 0.13
+  numBullets: 10
+  spreadAngle: 180
+  siegeRadius: 0
