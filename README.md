@@ -6,11 +6,21 @@
 
   
 ## How to use
-Hierarchyに[発射用のオブジェクト]をCreateしてください。
+Hierarchyタブで[発射用のオブジェクト]をCreateしてください。  
 
-[発射用のオブジェクト]にアタッチするスクリプトを作成してください。
-スクリプトには　using EasyBulletHellGenerator;　を追加し、BulletsLauncherクラスを継承してください。
-  
+ProjectタブでScriptableObject:Bullet PatternをCreateしてください。  
+ここで弾の挙動の設定や弾幕の設定を行えます。  
+
+[発射用のオブジェクト]にアタッチするスクリプトを作成してください。  
+スクリプトには　using EasyBulletHellGenerator;　を追加し、BulletsLauncherクラスを継承してください。  
+[SerializeField] private BulletPattern bp;のように、先ほど作成したBullet Patternをアタッチできるようにしてください。  
+Update関数内でキー入力待機等ができるようにし、その中にGenerateBulletHell()を追加して下さい。  
+これで先ほど作成したBullet Patternの弾幕が発射できるようになります。  
+
+GenerateBulletHell()はメソッドチェーンを使うことで、さらに機能を増やせます。  
+例えば、GenerateBulletHell(bp).SetPositionOffset(new Vector3(0, 15, 0));と書けば、発射位置がy軸上方向に15離れたところから発射されるようになります。
+他機能は下の（メソッドチェーンで追加できる設定）を見てください。
+
 ## 弾幕の種類  
 
 
@@ -52,7 +62,7 @@ numbullets...1回の射撃で放たれる弾数
 ![sc5](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc5.png)
 
   
-## 追加できる設定
+## メソッドチェーンで追加できる設定
 
 ### SetAngleOffsetX(float angle)  
 初期角度Xを変更します
