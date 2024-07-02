@@ -28,19 +28,19 @@ Update関数内でキー入力待機等ができるようにし、その中に'G
 
 
 ### 直線弾  
-
+Launcherから直線に球を発射します。  
 ![sc2](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
 
 ### 拡散弾  
-
+Launcherから指定した拡散角度で指定した弾数が広がるように発射します。  
 ![sc3](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc3.png)
 
 ### 爆発弾  
- 
+Launcherを中心に、円になるように指定した弾数を発射します。  
 ![sc4](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc4.png)
 
 ### 包囲弾   
-
+指定Targetを中心に囲うように向かってくる弾を指定弾数発射します。  
 ![sc5](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc5.png)
 
   
