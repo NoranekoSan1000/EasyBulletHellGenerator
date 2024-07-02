@@ -20,8 +20,8 @@ Update関数内でキー入力待機等ができるようにし、その中に'G
 これで先ほど作成したBullet Patternの弾幕が発射できるようになります。  
 
 'GenerateBulletHell()'はメソッドチェーンを使うことで、さらに機能を追加できます。  
-例えば、'GenerateBulletHell(bp).SetPositionOffset(new Vector3(0, 15, 0));'と書けば、  
-発射位置がy軸上方向に15離れたところから発射されるようになります。  
+例えば、'GenerateBulletHell(bp).SetAngleOffsetX(90);'と書けば、  
+発射角度がx軸に90度傾いて発射されるようになります。  
 他の機能については、下の（メソッドチェーンで追加できる設定）を見てください。  
 
 ## 弾幕の種類  
