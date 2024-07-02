@@ -11,6 +11,8 @@ Hierarchyタブで[発射用のオブジェクト]をCreateしてください。
 ProjectタブでScriptableObject:Bullet PatternをCreateしてください。  
 ここで弾の挙動の設定や弾幕の設定を行えます。  
 
+![sc6](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc6.png)
+
 [発射用のオブジェクト]にアタッチするスクリプトを作成してください。  
 スクリプトには'using EasyBulletHellGenerator;'を追加し、'BulletsLauncher'クラスを継承してください。  
 '[SerializeField] private BulletPattern bp;'のように、先ほど作成したBullet Patternをアタッチできるようにしてください。  
@@ -26,39 +28,18 @@ Update関数内でキー入力待機等ができるようにし、その中に'G
 
 
 ### 直線弾  
-StraightShot(int executioncount, float interval, Vector3 direction);  
-executioncount...実行回数  
-interval...射撃間隔  
-direction...初期角度(不要説)  
 
 ![sc2](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc2.png)
 
-### SpreadShot() 拡散弾  
-SpreadShot(int executioncount, float interval, float spreadangle, Vector3 direction, int numbullets);  
-executioncount...実行回数  
-interval...射撃間隔  
-spreadangle...拡散角度  
-direction...初期角度(不要説)  
-numbullets...1回の射撃で放たれる弾数 
+### 拡散弾  
 
 ![sc3](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc3.png)
 
-### ExplosionShot() 爆発弾  
-ExplosionShot(int executioncount, float interval, Vector3 direction, int numbullets);  
-executioncount...実行回数  
-interval...射撃間隔  
-direction...初期角度(不要説)  
-numbullets...1回の射撃で放たれる弾数  
-
+### 爆発弾  
+ 
 ![sc4](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc4.png)
 
-### SiegeShot() 包囲弾  
-SiegeShot(int executioncount, float interval, float radius, Vector3 direction, int numbullets);  
-executioncount...実行回数  
-interval...射撃間隔  
-radius...包囲される半径  
-direction...初期角度(不要説)  
-numbullets...1回の射撃で放たれる弾数  
+### 包囲弾   
 
 ![sc5](https://github.com/NoranekoSan1000/EasyBulletHellGenerater/blob/main/img/sc5.png)
 
