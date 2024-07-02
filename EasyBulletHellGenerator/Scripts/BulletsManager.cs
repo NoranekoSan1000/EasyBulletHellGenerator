@@ -16,7 +16,18 @@ namespace EasyBulletHellGenerator
         private GameObject target;
         private float interval; //射撃間隔
         private int executionCount; //実行回数
-        private Vector3 direction;
+        private Vector3 direction;//移動の向き
+        private ObjectDirection objDirection; //オブジェクトの向き
+        public enum ObjectDirection
+        {
+            Front = 100,
+            Back = 200,
+            Left = 300,
+            Right = 400,
+            Up = 500,
+            Down = 600,
+            Direction_of_movement = 700, //進行方向
+        }
         private int numBullets;
         private float spreadAngle; //※拡散のみ
         private float siegeRadius; //※包囲のみ
@@ -57,12 +68,13 @@ namespace EasyBulletHellGenerator
         }
 
         /// <summary> 弾の挙動設定(必須) </summary>
-        public void InitialBulletStatus(bool ismissile, float speed, float acceleration, float existtime)
+        public void InitialBulletStatus(bool ismissile, float speed, float acceleration, float existtime, ObjectDirection objdirection)
         {
             isMissile = ismissile;
             this.speed = speed;
             this.acceleration = acceleration;
             existTime = existtime;
+            objDirection = objdirection;
 
             this.direction = Vector3.back;
             changeTargetTime = 9999999999999;
@@ -192,7 +204,7 @@ namespace EasyBulletHellGenerator
         {
             BulletEntity shotA = BulletsPool.Instance.InstBullet(bullet);
             shotA.Initialize(direction, transform.position + positionOffset, isMissile, target, speed,
-            acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime);
+            acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime, objDirection);
         }
 
         private void spreadShot()
@@ -209,7 +221,7 @@ namespace EasyBulletHellGenerator
 
                     BulletEntity shotA = BulletsPool.Instance.InstBullet(bullet);
                     shotA.Initialize(newDirection, transform.position + positionOffset, isMissile, target, speed,
-                      acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime);
+                      acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime, objDirection);
                 }
 
                 // 次の発射時の角度増加量を設定
@@ -232,7 +244,7 @@ namespace EasyBulletHellGenerator
 
                     BulletEntity shotA = BulletsPool.Instance.InstBullet(bullet);
                     shotA.Initialize(newDirection, transform.position + positionOffset, isMissile, target,
-                    speed, acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime);
+                    speed, acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime, objDirection);
                 }
 
                 // 次の発射時の角度増加量を設定
@@ -255,7 +267,7 @@ namespace EasyBulletHellGenerator
 
                 BulletEntity shotA = BulletsPool.Instance.InstBullet(bullet);
                 shotA.Initialize((target.transform.position - siegePosition).normalized, siegePosition + positionOffset, isMissile, target,
-                speed, acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime);
+                speed, acceleration, existTime, changeTargetTime, changeGravityTime, startpauseTime, endPauseTime, objDirection);
             }
 
             // 次の発射時の角度増加量を設定

@@ -236,9 +236,11 @@ MonoBehaviour:
   targetObject: {fileID: 345608402}
   explosionA: {fileID: 11400000, guid: 99c233a461079a14f96084d63495d31e, type: 2}
   explosionB: {fileID: 11400000, guid: 3e5915224cd042949af521674e1b28a6, type: 2}
+  explosionC: {fileID: 11400000, guid: 2157150d73bec154ba5a07b64c44d971, type: 2}
   spreadA: {fileID: 11400000, guid: 32f3e8ebdfb87d540b8a6f1e7cc4676c, type: 2}
   spreadB: {fileID: 11400000, guid: a4305fc37d5f0be4b962d874f3c5ec9a, type: 2}
   spreadC: {fileID: 11400000, guid: af0060e5140165942801d4b86319410a, type: 2}
+  spreadC2: {fileID: 11400000, guid: 91d43c8da7e5c9c428bdeb0fbd277e05, type: 2}
   siegeA: {fileID: 11400000, guid: 4e5fa6b883dc37949b32b97748604a52, type: 2}
 --- !u!1 &207579448
 GameObject:
@@ -371,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  mouseSensitivity: 500
+  mouseSensitivity: 100
   shiftMultiplier: 1.5
 --- !u!1 &1131298022
 GameObject:

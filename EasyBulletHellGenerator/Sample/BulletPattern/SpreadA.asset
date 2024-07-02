@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: SpreadA
   m_EditorClassIdentifier: 
   formation: 300
-  bulletObject: {fileID: 2116964782039396192, guid: ed8452d1a6a894149ad9027307f2c5cb, type: 3}
+  bulletObject: {fileID: 5818305946988547878, guid: 7e754bdba1aca85478005a2b3c5f5824, type: 3}
+  positionOffset: {x: 0, y: 15, z: 0}
+  setGravity: 0
+  setGravityTime: 0
+  objDirection: 500
   isMissile: 0
   speed: -25
   acceleration: 30

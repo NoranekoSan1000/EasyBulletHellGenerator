@@ -5,7 +5,7 @@ namespace EasyBulletHellGenerator
     public class CameraController : MonoBehaviour
     {
         [SerializeField] private float moveSpeed = 10f;
-        [SerializeField] private float mouseSensitivity = 500f;
+        [SerializeField] private float mouseSensitivity = 100f;
         [SerializeField] private float shiftMultiplier = 1.5f;
 
         private float rotationX = 0f;
@@ -51,8 +51,8 @@ namespace EasyBulletHellGenerator
 
         private void HandleMouseLook()
         {
-            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.fixedDeltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.fixedDeltaTime;
 
             rotationY += mouseX;
             rotationX -= mouseY;

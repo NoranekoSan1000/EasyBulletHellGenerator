@@ -23,7 +23,9 @@ namespace EasyBulletHellGenerator
             GameObject bullets = Instantiate(bulletsManagerObject, transform.position, transform.rotation);
             BulletsManager s = bullets.AddComponent<BulletsManager>();
             s.Initialize(bulletpattern.bulletObject, targetObject); // オブジェクト設定
-            s.InitialBulletStatus(bulletpattern.isMissile, bulletpattern.speed, bulletpattern.acceleration, bulletpattern.existTime); // 弾の挙動設定
+            s.InitialBulletStatus(bulletpattern.isMissile, bulletpattern.speed, bulletpattern.acceleration, bulletpattern.existTime, bulletpattern.objDirection); // 弾の挙動設定
+            s.SetPositionOffset(bulletpattern.positionOffset);
+            if (bulletpattern.setGravity) s.SetChangeGravity(bulletpattern.setGravityTime);
 
             if (bulletpattern.formation == BulletsManager.ShotFormation.StraightShot)
             {

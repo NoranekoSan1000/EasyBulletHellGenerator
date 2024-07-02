@@ -12,14 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cad9641556553d14c8892c41918bf2ef, type: 3}
   m_Name: ExplosionA
   m_EditorClassIdentifier: 
-  formation: 200
-  bulletObject: {fileID: 2116964782039396192, guid: ed8452d1a6a894149ad9027307f2c5cb, type: 3}
+  formation: 100
+  bulletObject: {fileID: 5818305946988547878, guid: 7e754bdba1aca85478005a2b3c5f5824, type: 3}
+  positionOffset: {x: 0, y: 0, z: 0}
+  setGravity: 0
+  setGravityTime: 0
+  objDirection: 700
   isMissile: 0
   speed: -12
   acceleration: 16
   existTime: 5
-  executionCount: 5
+  executionCount: 8
   interval: 0.13
-  numBullets: 10
+  numBullets: 4
   spreadAngle: 180
   siegeRadius: 0

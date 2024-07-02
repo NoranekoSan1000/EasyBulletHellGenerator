@@ -13,8 +13,15 @@ namespace EasyBulletHellGenerator
         {
             BulletPattern bulletPattern = (BulletPattern)target;
 
+            EditorGUILayout.LabelField("弾のオブジェクト", EditorStyles.boldLabel);
+            bulletPattern.bulletObject = (GameObject)EditorGUILayout.ObjectField("bulletObject", bulletPattern.bulletObject, typeof(GameObject), true);
+
+            EditorGUILayout.LabelField("オブジェクトの向き", EditorStyles.boldLabel);
+            bulletPattern.objDirection = (BulletsManager.ObjectDirection)EditorGUILayout.EnumPopup("ObjDirection", bulletPattern.objDirection);
+
             // Enumを表示して変更を検知
             EditorGUI.BeginChangeCheck();
+            EditorGUILayout.LabelField("発射形態", EditorStyles.boldLabel);
             bulletPattern.formation = (BulletsManager.ShotFormation)EditorGUILayout.EnumPopup("Formation", bulletPattern.formation);
             if (EditorGUI.EndChangeCheck())
             {
@@ -25,14 +32,18 @@ namespace EasyBulletHellGenerator
             // 画像表示
             viewImage(bulletPattern.formation.ToString());
 
+            EditorGUILayout.LabelField("初期位置のズレ", EditorStyles.boldLabel);
+            bulletPattern.positionOffset = EditorGUILayout.Vector3Field("PositionOffset", bulletPattern.positionOffset);
+
+            EditorGUILayout.LabelField("実行回数", EditorStyles.boldLabel);
+            bulletPattern.executionCount = EditorGUILayout.IntField("Execution Count", bulletPattern.executionCount);
+
+            EditorGUILayout.LabelField("実行間隔", EditorStyles.boldLabel);
+            bulletPattern.interval = EditorGUILayout.FloatField("Interval", bulletPattern.interval);
+
             EditorGUILayout.Space(20);
             EditorGUILayout.LabelField("---弾の挙動設定---", EditorStyles.boldLabel);
             EditorGUILayout.Space(5);
-
-            
-
-            EditorGUILayout.LabelField("弾のオブジェクト", EditorStyles.boldLabel);
-            bulletPattern.bulletObject = (GameObject)EditorGUILayout.ObjectField("bulletObject", bulletPattern.bulletObject, typeof(GameObject), true);
 
             EditorGUILayout.LabelField("誘導", EditorStyles.boldLabel);
             bulletPattern.isMissile = EditorGUILayout.Toggle("Is Missile", bulletPattern.isMissile);
@@ -46,15 +57,19 @@ namespace EasyBulletHellGenerator
             EditorGUILayout.LabelField("存在時間", EditorStyles.boldLabel);
             bulletPattern.existTime = EditorGUILayout.FloatField("Exist Time", bulletPattern.existTime);
 
+            EditorGUILayout.LabelField("重力設定", EditorStyles.boldLabel);
+            bulletPattern.setGravity = EditorGUILayout.Toggle("Set Gravity", bulletPattern.setGravity);
+
+            EditorGUILayout.BeginHorizontal();
+            EditorGUI.BeginDisabledGroup(!bulletPattern.setGravity);
+            EditorGUILayout.LabelField("重力開始時間", GUILayout.Width(100), GUILayout.Height(20));
+            bulletPattern.setGravityTime = EditorGUILayout.FloatField(bulletPattern.setGravityTime, GUILayout.Width(50));
+            EditorGUI.EndDisabledGroup();
+            EditorGUILayout.EndHorizontal();
+
             EditorGUILayout.Space(20);
             EditorGUILayout.LabelField("---弾幕設定---", EditorStyles.boldLabel);
             EditorGUILayout.Space(5);
-
-            EditorGUILayout.LabelField("実行回数", EditorStyles.boldLabel);
-            bulletPattern.executionCount = EditorGUILayout.IntField("Execution Count", bulletPattern.executionCount);
-
-            EditorGUILayout.LabelField("実行間隔", EditorStyles.boldLabel);
-            bulletPattern.interval = EditorGUILayout.FloatField("Interval", bulletPattern.interval);
 
             EditorGUILayout.LabelField("１実行で発射する弾数", EditorStyles.boldLabel);
             bulletPattern.numBullets = EditorGUILayout.IntField("Num Bullets", bulletPattern.numBullets);

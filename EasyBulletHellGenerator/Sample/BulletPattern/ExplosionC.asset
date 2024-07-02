@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cad9641556553d14c8892c41918bf2ef, type: 3}
-  m_Name: SiegeA
+  m_Name: ExplosionC
   m_EditorClassIdentifier: 
-  formation: 400
-  bulletObject: {fileID: 5818305946988547878, guid: 7e754bdba1aca85478005a2b3c5f5824, type: 3}
-  positionOffset: {x: 0, y: 8, z: 0}
-  setGravity: 1
-  setGravityTime: 2
-  objDirection: 600
+  formation: 200
+  bulletObject: {fileID: 5421012118818840220, guid: 6c7496b4fedf8a14aa592da85b27f83f, type: 3}
+  positionOffset: {x: 0, y: 15, z: 0}
+  setGravity: 0
+  setGravityTime: 0
+  objDirection: 700
   isMissile: 0
-  speed: 13
-  acceleration: 3
-  existTime: 5
-  executionCount: 8
-  interval: 0.5
-  numBullets: 16
-  spreadAngle: 45
-  siegeRadius: 40
+  speed: -15
+  acceleration: 20
+  existTime: 6
+  executionCount: 60
+  interval: 0.03
+  numBullets: 2
+  spreadAngle: 0
+  siegeRadius: 0

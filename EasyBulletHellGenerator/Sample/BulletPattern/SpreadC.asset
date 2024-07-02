@@ -13,13 +13,17 @@ MonoBehaviour:
   m_Name: SpreadC
   m_EditorClassIdentifier: 
   formation: 300
-  bulletObject: {fileID: 5421012118818840220, guid: 6c7496b4fedf8a14aa592da85b27f83f, type: 3}
+  bulletObject: {fileID: 5818305946988547878, guid: 7e754bdba1aca85478005a2b3c5f5824, type: 3}
+  positionOffset: {x: 30, y: 15, z: 0}
+  setGravity: 0
+  setGravityTime: 0
+  objDirection: 600
   isMissile: 0
   speed: -25
   acceleration: 30
   existTime: 10
   executionCount: 35
   interval: 0.075
-  numBullets: 7
-  spreadAngle: 35
+  numBullets: 5
+  spreadAngle: 45
   siegeRadius: 0

@@ -7,6 +7,10 @@ namespace EasyBulletHellGenerator
     {
         public BulletsManager.ShotFormation formation;
         public GameObject bulletObject;
+        public Vector3 positionOffset;
+        public bool setGravity;
+        public float setGravityTime;
+        public BulletsManager.ObjectDirection objDirection;
         public bool isMissile;
         public float speed;
         public float acceleration;
